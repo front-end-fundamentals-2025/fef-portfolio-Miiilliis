@@ -1,0 +1,22 @@
+/*ALL*/
+
+* {
+  color: rgb(0, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*TITLE*/
+p1 {
+  padding-left: 40%;
+  font-size: 3rem;
+  color: rgb(202, 49, 49);
+}
+/*HEADER*/
+ul {
+  padding-left: 0%;
+}
+
+/*PICTURE*/
+.main-img {
+  width: 60%;
+}
