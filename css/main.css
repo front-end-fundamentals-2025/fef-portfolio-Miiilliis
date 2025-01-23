@@ -13,7 +13,7 @@ p1 {
 
 /*TITLE CONTACT PAGE*/
 p3 {
-  padding-left: 38%;
+  padding-left: 43%;
   font-size: 2.5rem;
 }
 
@@ -33,4 +33,43 @@ ul {
 /*FOOTER TEXT*/
 footer {
   padding-top: 10%;
+}
+
+/*WRITING BOX*/
+input [type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+/*SUBMIT BUTTON*/
+input[type="submit"] {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+
+/*NAME BOXES*/
+input[type="text"] {
+  border: none;
+  border-radius: 3px;
+}
+
+/*BACKGROUND OF WRITING BOX*/
+.container {
+  border-radius: 15px;
+  background-color: rgb(191, 113, 164);
+  padding: 15px;
+}
+
+/*BACKGROUND COLOR*/
+body {
+  background-color: rgb(222, 171, 204);
 }
