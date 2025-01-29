@@ -17,19 +17,47 @@ p3 {
   font-size: 2.5rem;
 }
 
-/*HEADER*/
-ul {
-  padding-bottom: 10%;
-  padding-left: 0%;
+/*HEADER PROJECT PAGE*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/*PICTURE*/
+.navbar > .logo {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.navbar > .menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar > .menu > a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*PROJECT 1 PICTURE*/
+figure {
+  margin-top: 15%;
+  margin-left: 40%;
+}
+
+/*PICTURES ON HOMEPAGE*/
 .main-img {
+  padding-top: 10%;
   padding-bottom: 10%;
   padding-left: 20%;
   width: 60%;
 }
 
+/*PICTURES ON PROJECT PAGE*/
+.project-img {
+  width: 50%;
+  height: 100%;
+}
 /*FOOTER TEXT*/
 footer {
   padding-top: 10%;
@@ -64,12 +92,37 @@ input[type="text"] {
 
 /*BACKGROUND OF WRITING BOX*/
 .container {
+  margin-top: 10%;
   border-radius: 15px;
   background-color: rgb(191, 113, 164);
   padding: 15px;
 }
 
-/*BACKGROUND COLOR*/
+/*FOR ALL PAGES BODY*/
 body {
-  background-color: rgb(222, 171, 204);
+  margin: 0%;
+}
+
+/*FOR ALL PAGES HEADER*/
+header {
+  background-color: rgb(236, 179, 221);
+  margin: 0%;
+}
+
+/*GRID ON PROJECT PAGE*/
+.main-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*IMAGES ON 1 PROJECT*/
+.firstproject-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*JIL SANDER TEXT*/
+.text > h3 {
+  text-transform: uppercase;
 }
