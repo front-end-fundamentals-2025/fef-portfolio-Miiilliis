@@ -5,18 +5,6 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/*TITLE HOMEPAGE*/
-p1 {
-  padding-left: 34%;
-  font-size: 2.5rem;
-}
-
-/*TITLE CONTACT PAGE*/
-p3 {
-  padding-left: 43%;
-  font-size: 2.5rem;
-}
-
 /*HEADER PROJECT PAGE*/
 .navbar {
   display: flex;
@@ -24,25 +12,30 @@ p3 {
   justify-content: space-between;
 }
 
+/*TITLE HEADER*/
 .navbar > .logo {
   font-size: 5vw;
   font-weight: bold;
+  padding-left: 1rem;
 }
 
+/*MENU FOR NAVIGATION*/
 .navbar > .menu {
   display: flex;
   gap: 1rem;
+  padding-right: 1rem;
 }
 
+/*LINKS NAVIGATION*/
 .navbar > .menu > a {
   list-style: none;
   text-decoration: none;
 }
 
-/*PROJECT 1 PICTURE*/
-figure {
-  margin-top: 15%;
-  margin-left: 40%;
+/*HOMEPAGE ABOUT ME AND TEXT*/
+.p1, h1 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 /*PICTURES ON HOMEPAGE*/
@@ -53,14 +46,10 @@ figure {
   width: 60%;
 }
 
-/*PICTURES ON PROJECT PAGE*/
-.project-img {
-  width: 50%;
-  height: 100%;
-}
 /*FOOTER TEXT*/
 footer {
-  padding-top: 10%;
+  padding-top: 10rem;
+  padding-left: 1rem;
 }
 
 /*WRITING BOX*/
@@ -68,7 +57,7 @@ input [type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   border: none;
   border-radius: 15px;
   box-sizing: border-box;
@@ -92,9 +81,11 @@ input[type="text"] {
 
 /*BACKGROUND OF WRITING BOX*/
 .container {
+  margin-right: 5%;
+  margin-left: 5%;
   margin-top: 10%;
   border-radius: 15px;
-  background-color: rgb(191, 113, 164);
+  background-color: rgb(236, 179, 221);
   padding: 15px;
 }
 
@@ -109,20 +100,63 @@ header {
   margin: 0%;
 }
 
-/*GRID ON PROJECT PAGE*/
-.main-projects {
+/*GRID ON MY PROJECTS PAGE*/
+.my-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-/*IMAGES ON 1 PROJECT*/
+/*IMAGES ON PROJECTS PAGE*/
+.project-img{
+  width: 40%;
+  height: 80%;
+}
+ 
+/*PROJECT IMAGES CENTERED*/
+figure {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*PROJECTS TEXT*/
+figcaption {
+  padding-left: 1rem;
+}
+
+/*PROJECT 1: JIL SANDER*/
+a{
+  text-decoration: none;
+}
+
+
+/*IMAGES ON PROJECT 1*/
 .firstproject-img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*JIL SANDER TEXT*/
-.text > h3 {
-  text-transform: uppercase;
+.text {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 600px)
+{
+  .my-projects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
 }
