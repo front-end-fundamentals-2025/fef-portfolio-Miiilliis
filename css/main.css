@@ -160,3 +160,24 @@ a{
     flex-direction: column;
   }
 }
+
+
+
+
+figcaption {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+figcaption:hover {
+      text-decoration:underline;
+    }
+
+@keyframes {
+
+}
+
+
+
+
+
