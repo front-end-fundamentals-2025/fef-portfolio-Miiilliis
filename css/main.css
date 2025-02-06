@@ -122,11 +122,18 @@ figure {
 /*PROJECTS TEXT*/
 figcaption {
   padding-left: 1rem;
+  
+}
+
+figcaption:hover{
+  animation-name: shake;
+  animation-duration: 1s;
 }
 
 /*PROJECT 1: JIL SANDER*/
 a{
   text-decoration: none;
+ 
 }
 
 
@@ -161,23 +168,11 @@ a{
   }
 }
 
-
-
-
-figcaption {
-  text-decoration: none;
-  transition: text-decoration 0.3s ease;
+/*Animation*/
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
-
-figcaption:hover {
-      text-decoration:underline;
-    }
-
-@keyframes {
-
-}
-
-
-
-
-
